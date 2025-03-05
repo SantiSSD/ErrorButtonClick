@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datagridview_Autogeneratecolumns", "Datagridview_Autogeneratecolumns\Datagridview_Autogeneratecolumns.csproj", "{7E9E4F5C-B907-4BC2-81D0-F70CBB36D909}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominio", "Dominio\Dominio.csproj", "{827283D8-405D-4698-816F-A3019DCFF231}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E9E4F5C-B907-4BC2-81D0-F70CBB36D909}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E9E4F5C-B907-4BC2-81D0-F70CBB36D909}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E9E4F5C-B907-4BC2-81D0-F70CBB36D909}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E9E4F5C-B907-4BC2-81D0-F70CBB36D909}.Release|Any CPU.Build.0 = Release|Any CPU
+		{827283D8-405D-4698-816F-A3019DCFF231}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{827283D8-405D-4698-816F-A3019DCFF231}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{827283D8-405D-4698-816F-A3019DCFF231}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{827283D8-405D-4698-816F-A3019DCFF231}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
