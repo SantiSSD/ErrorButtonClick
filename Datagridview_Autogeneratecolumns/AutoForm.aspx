@@ -36,12 +36,12 @@
             <asp:Label Text="Usado" CssClass="form-check-label" runat="server" />
 
             <div class="mb-3">
-                <asp:RadioButton ID="rdbImportado" Text="Importado" runat="server" GroupName="Importado" />
-                <asp:RadioButton ID="rdbNacional" Text="Nacional" Checked="true" runat="server" GroupName="Importado" />
+                <asp:RadioButton ID="rdbImportado" OnCheckedChanged="rdbImportado_CheckedChanged" Text="Importado" runat="server" GroupName="Importado" />
+                <asp:RadioButton ID="rdbNacional" OnCheckedChanged="rdbImportado_CheckedChanged" Text="Nacional" Checked="true" runat="server" GroupName="Importado" />
             </div>
 
             <div class="mb-3">
-                <asp:Button ID="btnAceptar"  OnClick="btnAceptar_Click" runat="server" Text="Aceptar" />
+                <asp:Button ID="btnAceptar" OnClick="btnAceptar_Click" runat="server" Text="Aceptar" />
                 <a href="Default.aspx">Cancelar</a>
             </div>
         </div>

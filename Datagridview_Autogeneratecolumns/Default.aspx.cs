@@ -12,8 +12,15 @@ namespace Datagridview_Autogeneratecolumns
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            AutoNegocio negocio = new AutoNegocio();
-            dgvAutos.DataSource = negocio.Listar();
+            if (Session["listaAutos"] == null)
+            {
+                AutoNegocio negocio = new AutoNegocio();
+                Session.Add("listaAutos", negocio.Listar());
+
+            }
+
+
+            dgvAutos.DataSource = Session["listaAutos"];
             dgvAutos.DataBind();
 
         }

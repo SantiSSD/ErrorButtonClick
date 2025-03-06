@@ -12,11 +12,14 @@ namespace Datagridview_Autogeneratecolumns
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           
+
             {
-                ddlColores.Items.Add("Rojo");
-                ddlColores.Items.Add("Negro");
-                ddlColores.Items.Add("Blanco");
+                if (!IsPostBack)
+                {
+                    ddlColores.Items.Add("Rojo");
+                    ddlColores.Items.Add("Negro");
+                    ddlColores.Items.Add("Blanco");
+                }
             }
         }
 
@@ -38,6 +41,16 @@ namespace Datagridview_Autogeneratecolumns
             {
                 a.Importado = false;
             }
+
+            ((List<Auto>)Session["listaAutos"]).Add(a);
+
+            Response.Redirect("Default.aspx");
+
+        }
+
+        protected void rdbImportado_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
